@@ -18,7 +18,8 @@ const datoEventService = {
 
 }
 // const nuxtUrl = `https://dundle.dev`;
-const nuxtUrl = `https://nuxt.dundle.dev`;
+// const nuxtUrl = `https://nuxt.dundle.dev`;
+const nuxtUrl = `https://vercel-next-catch-all.vercel.app`;
 // const nuxtUrl = `http://100.68.11.108:3000`; // nuxt on mac directly
 // const nuxtUrl = `http://100.68.11.108:3002`; // next on mac directly
 
