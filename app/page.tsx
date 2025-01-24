@@ -29,8 +29,8 @@ const Test = ({ page, href }: { page: string; href?: string }) => {
 export default function Page() {
   return (
     <>
-      <Test page="nl/nl/cart" />
-      <Test page="gb/en/cart" />
+      <Test page="nl/cart" />
+      <Test page="gb/cart" />
       <Test page="nl/nl/category/test/" />
     </>
   );
