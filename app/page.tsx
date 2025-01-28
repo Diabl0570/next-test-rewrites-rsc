@@ -12,7 +12,7 @@ const Test = ({ page, href }: { page: string; href?: string }) => {
   return (
     <>
       <Link id={`link-${id}`} href={href}>
-        Link to /{page}-before
+        Link to /{page}
       </Link>
       <button
         id={`button-${id}`}
@@ -20,7 +20,7 @@ const Test = ({ page, href }: { page: string; href?: string }) => {
           router.push(href);
         }}
       >
-        Button to /{page}-before
+        Button to /{page}
       </button>
     </>
   );
@@ -29,8 +29,8 @@ const Test = ({ page, href }: { page: string; href?: string }) => {
 export default function Page() {
   return (
     <>
-      <Test page="nl/cart" />
-      <Test page="gb/cart" />
+      <Test page="nl/cart/" />
+      <Test page="gb/cart/" />
       <Test page="nl/nl/category/test/" />
     </>
   );
