@@ -11,6 +11,9 @@ const Test = ({ page, href }: { page: string; href?: string }) => {
   const id = page.replaceAll("/", "-");
   return (
     <>
+      <a id={`link-${id}`} href={href}>
+        Anchor to /{page}
+      </a>
       <Link id={`link-${id}`} href={href}>
         Link to /{page}
       </Link>
