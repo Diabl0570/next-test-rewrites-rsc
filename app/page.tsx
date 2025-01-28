@@ -10,31 +10,35 @@ const Test = ({ page, href }: { page: string; href?: string }) => {
 
   const id = page.replaceAll("/", "-");
   return (
-    <>
-      <a id={`link-${id}`} href={href}>
-        Anchor to /{page}
-      </a>
-      <Link id={`link-${id}`} href={href}>
-        Link to /{page}
-      </Link>
-      <button
-        id={`button-${id}`}
-        onClick={async () => {
-          router.push(href);
-        }}
-      >
-        Button to /{page}
-      </button>
-    </>
+    <div>
+      <p>
+        <a id={`link-${id}`} href={href}>
+          Anchor to /{page}
+        </a>
+      </p>
+      <p>
+        <Link id={`link-${id}`} href={href}>
+          Link to /{page}
+        </Link>
+      </p>
+      <p>
+        <button
+          id={`button-${id}`}
+          onClick={async () => {
+            router.push(href);
+          }}
+        >
+          Button to /{page}
+        </button>
+      </p>
+    </div>
   );
 };
 
 export default function Page() {
   return (
     <>
-      <Test page="nl/cart/" />
       <Test page="gb/cart/" />
-      <Test page="nl/nl/category/test/" />
     </>
   );
 }
